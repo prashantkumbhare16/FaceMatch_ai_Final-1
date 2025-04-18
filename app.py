@@ -10,7 +10,7 @@ import os
 import json
 import numpy as np
 from PIL import Image
-import logging
+import logging 
 from flask import flash
 import requests
 from functools import wraps
