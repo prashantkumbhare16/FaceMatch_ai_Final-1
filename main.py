@@ -267,11 +267,12 @@ def logout():
     return redirect(url_for('login'))
 
 # Route for user login
-# if __name__ == '__main__':
+if __name__ == '__main__':
+    app.run()
 #     app.run(debug=True, port=5000)
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+# if __name__ == "__main__":
+#     app.run(host="0.0.0.0", port=5000, debug=True)
     # app.run(debug=True, port=5000)
 
 
