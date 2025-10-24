@@ -40,7 +40,7 @@ def login_required(f):
 # start Route----------------------------------------------------------------------------------------------
 @app.route("/")
 def home():
-    return render_template("login.html")
+    return render_template("dashboard.html")
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
@@ -267,12 +267,12 @@ def logout():
     return redirect(url_for('login'))
 
 # Route for user login
-if __name__ == '__main__':
-    app.run()
+# if __name__ == '__main__':
+#     app.run()
 #     app.run(debug=True, port=5000)
 
-# if __name__ == "__main__":
-#     app.run(host="0.0.0.0", port=5000, debug=True)
-    # app.run(debug=True, port=5000)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(debug=True, port=5000)
 
 
